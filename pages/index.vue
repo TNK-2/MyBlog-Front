@@ -1,29 +1,45 @@
 <template>
-  <div class="container">
+  <div>
     <Header />
-    <logo />
+    <div class="main">
+      <EntryTitle
+        id="1"
+        title="test1"
+        content="fasdfafdajdfaflkflak"
+        date="20190610"
+      />
+      <EntryTitle
+        id="2"
+        title="test1"
+        content="fasdfafdajdfaflkflak"
+        date="20190610"
+      />
+      <EntryTitle
+        id="3"
+        title="test1"
+        content="fasdfafdajdfaflkflak"
+        date="20190610"
+      />
+    </div>
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
 import Header from '~/components/Header.vue'
+import EntryTitle from '~/components/EntryTitle.vue'
 
 export default {
   components: {
-    Logo,
-    Header
+    Header,
+    EntryTitle
   }
 }
 </script>
 
 <style>
-.container {
+.main {
+  width: 95%;
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 10px;
 }
 </style>
