@@ -2,7 +2,8 @@
   <div>
     <Header />
     <div class="main">
-      <div style="font-size:initial; font-weight:initial;" v-html="$md.render(model)"></div>
+      <h1 class="content entory-title">記事タイトル</h1>
+      <div class="content entry-content" style="font-size:initial; font-weight:initial;" v-html="$md.render(model)"></div>
     </div>
   </div>
 </template>
@@ -22,5 +23,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.entory-title {
+  margin: 0 auto;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-feature-settings: "palt";
+  line-height: 1.2;
+  padding: 20px 0 0 20px;
+}
+.entry-content {
+  padding: 20px;
+}
+pre {
+  font-size: 1.1rem;
+}
 </style>

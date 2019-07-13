@@ -36,10 +36,5 @@ export default {
 }
 </script>
 
-<style>
-.main {
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 10px;
-}
+<style lang="scss">
 </style>

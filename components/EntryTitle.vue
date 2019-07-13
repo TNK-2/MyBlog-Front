@@ -33,9 +33,9 @@ export default class EntryTitle extends Vue {
 }
 </script>
 
-<style>
+<style scoped>
 .card {
-  background-color: #f8f8f8;
-  margin-bottom: 8px;
+  height: 145px;
+  margin-bottom: 9px;
 }
 </style>
