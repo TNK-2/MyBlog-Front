@@ -16,7 +16,9 @@ const config: NuxtConfiguration = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -34,13 +36,24 @@ const config: NuxtConfiguration = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    preset: 'default',
+    injected: true, 
+    breaks: true, 
+    html: true, 
+    linkify: true,
+    typography: true, 
+    xhtmlOut: true,
+    langPrefix: 'language-',
+    quotes: '“”‘’',
+    highlight: function (/*str, lang*/) { return ''; },
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
