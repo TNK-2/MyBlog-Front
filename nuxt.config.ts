@@ -77,6 +77,10 @@ const config: NuxtConfiguration = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:8080'
   }
 }
 
