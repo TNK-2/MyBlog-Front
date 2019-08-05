@@ -11,3 +11,14 @@ export interface Auth {
   token?: String;
   isAuthenticated: Boolean;
 }
+
+export interface EntryState {
+  entries: Entry[];
+}
+
+export interface Entry {
+  id: String;
+  title: String;
+  content: String;
+  date: String;
+}
