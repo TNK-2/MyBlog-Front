@@ -1,4 +1,4 @@
-# nuxt-ts-test
+# MyBlog-Front
 
 > My magnificent Nuxt.js project
 
